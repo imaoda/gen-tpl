@@ -1,0 +1,17 @@
+{
+  "name": "gen-tpl",
+  "version": "0.0.7",
+  "description": "generator 模板",
+  "main": "index.js",
+  "author": "wangyongfeng",
+  "repository": "https://github.com/imaoda/gen-tpl",
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "脚手架",
+    "generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^4.0.1"
+  }
+}

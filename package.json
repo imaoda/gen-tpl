@@ -1,6 +1,6 @@
 {
   "name": "gen-tpl",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "generator 模板",
   "main": "index.js",
   "author": "wangyongfeng",

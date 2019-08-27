@@ -1,5 +1,6 @@
 const Generator = require('yeoman-generator')
 const fs = require('fs')
+const path = require('path')
 module.exports = class extends Generator {
   prompting() {
     return this.prompt([
@@ -40,12 +41,12 @@ module.exports = class extends Generator {
   }
 
   install() {
-    // this.installDependencies()
-    this.spawnCommandSync('npm', ['config', 'set', 'sass_binary_site=https://npm.taobao.org/mirrors/node-sass/'])
-    this.spawnCommandSync('npm', ['install', '--registry=https://registry.npm.taobao.org'])
+    const projectDir = path.join(process.cwd(), this.answers.appName)
+    this.spawnCommandSync('npm', ['config', 'set', 'sass_binary_site=https://npm.taobao.org/mirrors/node-sass/'], {cwd: projectDir})
+    this.spawnCommandSync('npm', ['install', '--registry=https://registry.npm.taobao.org'], {cwd: projectDir})
   }
 
   end() {
-    this.log('happy coding!')
+    this.log('happy coding!', 'green')
   }
 }

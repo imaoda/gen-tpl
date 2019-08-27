@@ -47,6 +47,6 @@ module.exports = class extends Generator {
   }
 
   end() {
-    this.log('happy coding!', 'green')
+    this.log('happy coding!')
   }
 }

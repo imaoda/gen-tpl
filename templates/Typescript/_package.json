@@ -4,5 +4,8 @@
   "main": "src/index.ts",
   "dependencies": {
     "react": "^16.8.0"
-  }
+  },
+  "description": "描述",
+  "licence": "MIT",
+  "repository": ""
 }
